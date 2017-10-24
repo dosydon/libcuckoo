@@ -25,6 +25,7 @@ constexpr double LIBCUCKOO_DEFAULT_MINIMUM_LOAD_FACTOR = 0.05;
 constexpr size_t LIBCUCKOO_NO_MAXIMUM_HASHPOWER =
     std::numeric_limits<size_t>::max();
 
+constexpr size_t LIBCUCKOO_MAXIMUM_HASHPOWER = 25;
 //! set LIBCUCKOO_DEBUG to 1 to enable debug output
 #define LIBCUCKOO_DEBUG 0
 

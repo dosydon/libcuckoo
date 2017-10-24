@@ -102,7 +102,7 @@ public:
       : hash_fn_(hf), eq_fn_(equal), buckets_(reserve_calc(n), alloc),
         all_locks_(get_allocator()),
         minimum_load_factor_(LIBCUCKOO_DEFAULT_MINIMUM_LOAD_FACTOR),
-        maximum_hashpower_(LIBCUCKOO_NO_MAXIMUM_HASHPOWER) {
+        maximum_hashpower_(LIBCUCKOO_MAXIMUM_HASHPOWER) {
     all_locks_.emplace_back(std::min(bucket_count(), size_type(kMaxNumLocks)),
                             spinlock(), get_allocator());
   }
